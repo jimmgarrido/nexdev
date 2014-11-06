@@ -1,0 +1,44 @@
+---
+
+layout: homepage
+
+---
+{% for post in site.posts limit:3 %}
+<div class="row">
+	<div class="span9">
+		<a href="{{ post.url }}">
+			<h3 style="margin:0 0 8px 0; font-size:1.8em">{{ post.title }}</h3></a>
+		<!--<h3 style="font-size:1.25em; margin:0 0 8px 0">Developer</h3>-->
+		{% if post.description %}
+		<p style="font-size:12pt">{{ post.description }}</p>
+		{% endif %}
+	</div>
+</div>
+{% endfor %}
+<!-- <div class="row">
+	<div class="span2">
+		<img src="assets/me.jpg" style="height:110px"/>
+	</div>
+	<div class="span9">
+		<h3 style="margin:0 0 8px 0; font-size:1.8em">Jimmy Garrido</h3>
+		<h3 style="font-size:1.25em; margin:0 0 8px 0">Developer</h3>
+		<p style="font-size:12pt">
+			Born and raised in California, Jimmy is currently attending San Francisco 
+			State University for a B.S in Computer Science. His skills include C#,
+			Java, and C++ and he has developed apps for Windows Phone and Android.</p>
+			<a href="mailto:jimmy@nexdev.co" style="font-size:12pt">jimmy@nexdev.co</a><br/>
+			<a href="http://jimmygarrido.co" style="font-size:12pt">jimmygarrido.co</a>
+	</div>
+</div> -->
+<!-- <div class="grid">
+	<dl style="color:white; font-size:1.2em;">
+	{% for post in site.posts limit:5 %}
+		<a href="{{ post.url }}" style="color:white">
+			<dt style="padding-bottom:5px">{{ post.title }}</dt>
+		</a>
+		{% if post.description %}
+		<dd>{{ post.description }}</dd>
+		{% endif %}
+	{% endfor %}
+	</dl>
+</div> -->

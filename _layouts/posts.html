@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1"></meta>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		
-		<title>nexDev | Windows apps</title>
+		<title>nexDev Blog</title>
 
 
 		<link rel="stylesheet" href="../../../css/metro-bootstrap.css">
@@ -19,13 +19,22 @@
 		</script>
 		
 		<style>
-			p{
-				color:rgba(0, 0, 0, 0.8) !important;
-				font-size:16.5px !important;
+			.metro p{
+				color:rgba(0, 0, 0, 0.8);
+				font-size:16.5px;
+				line-height: 19pt;
+				letter-spacing:0.03em;
+				margin:0 0 15pt 0;
 			}
 			
-			h3{
-				padding:15px 0 15px 0 !important;
+			.metro h3{
+				padding:15px 0 15px 0;
+				font-size: 24.5px;
+				letter-spacing:0.03em;
+			}
+			
+			.metro h4 {
+				font-size:18px;
 			}
 			
 		</style>
@@ -58,7 +67,7 @@
 		<nav class="navigation-bar on-phone no-tablet no-desktop" style="background-color:#1b64ae">
 			<nav class="navigation-bar-content">
 				<a href="http://nexdev.co">
-					<div class="element" style="padding-top:11px">
+					<div class="element" style="padding-top:12px">
 						<h2 style="font-size:21px; margin: 0; padding: 0; color:white">nexDev</h2>
 					</div>
 				</a>
@@ -69,7 +78,7 @@
 		<section class="grid no-phone">
 			<div class="container">
 				<div class="grid" style="padding-top:20px; width:850px; margin: 0 auto 0 auto">	
-					<h1 style="font-size:3.4em; margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.title }} </h1>
+					<h1 style="font-size:3.5em; margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.title }} </h1>
 					<h4 style="margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.date | date_to_string }} </h4>
 					{{ content }}
 				</div>
@@ -80,7 +89,7 @@
 		<section class="grid on-phone no-tablet no-desktop">
 			<div class="container">
 				<div class="grid" style="padding:20px 5px 0 5px;">	
-					<h1 style="font-size:3.4em; margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.title }} </h1>
+					<h1 style="font-size:3.5em; margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.title }} </h1>
 					<h4 style="margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.date | date_to_string }} </h4>
 					{{ content }}
 				</div>

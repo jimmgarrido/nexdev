@@ -38,10 +38,10 @@ layout: homepage
 </div>
 
 <!--Blog layout for mobile-->
-<div class="row on-phone no-desktop">
+<div class="row on-phone no-desktop no-tablet">
 	<div class="span9">
 		<a href="{{ post.url }}">
-			<h3 class="h3-mobile" style="line-height:4.2rem; margin-bottom:5px !important;">{{ post.title }}</h3></a>
+			<h3 class="h3-mobile" style="line-height:4.2rem; margin-bottom:3px !important;">{{ post.title }}</h3></a>
 			<h3 class="date-mobile">
 				{% assign m = post.date | date: "%B" %} 
 				{% assign d = post.date | date: "%-d" %}

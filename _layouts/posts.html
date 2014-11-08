@@ -17,13 +17,36 @@
 		
 		<script type="text/javascript">
 		</script>
+		
+		<style>
+			p{
+				color:rgba(0, 0, 0, 0.8) !important;
+				font-size:17px !important;
+			}
+			
+			h3{
+				padding:15px 0 15px 0 !important;
+			}
+			
+		</style>
 	</head>
 	
 	<body class="metro">
-		<section class="grid no-phone" style="background-color:#1b64ae; height:20px">
+		<nav class="navigation-bar" style="background-color:#1b64ae">
+			<nav class="navigation-bar-content">
+				<a href="http://nexdev.co">
+					<div class="element" style="padding-top:5px">
+						<h2 style="font-size:21px; margin: 0; padding: 0; color:white">nexDev</h2>
+					</div>
+				</a>
+			</nav>
+		</nav>
+
+		<section class="grid no-phone">
 			<div class="container">
-				<div class="grid" style="padding-top:20px">	
+				<div class="grid" style="padding-top:20px; width:850px; margin: 0 auto 0 auto">	
 					<h1 style="font-size:3.4em; margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.title }} </h1>
+					<h4 style="margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.date | date_to_string }} </h4>
 					{{ content }}
 				</div>
 			</div>

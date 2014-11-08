@@ -21,7 +21,7 @@
 		<style>
 			p{
 				color:rgba(0, 0, 0, 0.8) !important;
-				font-size:17px !important;
+				font-size:16.5px !important;
 			}
 			
 			h3{
@@ -32,7 +32,8 @@
 	</head>
 	
 	<body class="metro">
-		<nav class="navigation-bar" style="background-color:#1b64ae">
+		<!--Nav for desktop-->
+		<nav class="navigation-bar no-phone no-tablet" style="background-color:#1b64ae">
 			<nav class="navigation-bar-content">
 				<a href="http://nexdev.co">
 					<div class="element" style="padding-top:5px">
@@ -41,10 +42,44 @@
 				</a>
 			</nav>
 		</nav>
-
+		
+		<!--Nav for tablet-->
+		<nav class="navigation-bar on-tablet no-phone no-desktop" style="background-color:#1b64ae">
+			<nav class="navigation-bar-content">
+				<a href="http://nexdev.co">
+					<div class="element" style="padding-top:10px">
+						<h2 style="font-size:21px; margin: 0; padding: 0; color:white">nexDev</h2>
+					</div>
+				</a>
+			</nav>
+		</nav>
+		
+		<!--Nav for mobile-->
+		<nav class="navigation-bar on-phone no-tablet no-desktop" style="background-color:#1b64ae">
+			<nav class="navigation-bar-content">
+				<a href="http://nexdev.co">
+					<div class="element" style="padding-top:11px">
+						<h2 style="font-size:21px; margin: 0; padding: 0; color:white">nexDev</h2>
+					</div>
+				</a>
+			</nav>
+		</nav>
+		
+		<!--Content area for desktop-->
 		<section class="grid no-phone">
 			<div class="container">
 				<div class="grid" style="padding-top:20px; width:850px; margin: 0 auto 0 auto">	
+					<h1 style="font-size:3.4em; margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.title }} </h1>
+					<h4 style="margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.date | date_to_string }} </h4>
+					{{ content }}
+				</div>
+			</div>
+		</section>
+		
+		<!--Content area for mobile-->
+		<section class="grid on-phone no-tablet no-desktop">
+			<div class="container">
+				<div class="grid" style="padding:20px 5px 0 5px;">	
 					<h1 style="font-size:3.4em; margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.title }} </h1>
 					<h4 style="margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.date | date_to_string }} </h4>
 					{{ content }}

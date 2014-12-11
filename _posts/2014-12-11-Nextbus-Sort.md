@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Sorting The NextBus API
+author: Jimmy Garrido
 description: How I made the transit data provided by NextBus more organized and easier to use by creating the NextBus-Sort parser.
 ---
 Many transit authorities make their data available for users to utilize, but most of the time they themselves don't host the data. This is especially true for real time data where the information is constantly updated.
@@ -46,4 +47,8 @@ Once the second merge is complete, the final list is written to a plaint text fi
 
 Initially figuring out how to sort the data was no easy task. But it was something that needed to be done in order to give users a quick and intuitive experience. Looking at the code, you will see that I took a very direct path to the goal, not caring much for optimization. Because this isn't meant to be run inside an app, performance was not really the focus. My hope is that I can transform this program into a way for developers to get sorted data from NextBus by simply inputting the desired agency. The results would then be saved in a sqlite database, which developers would find more useful than a text file. 
 
-But in the mean time, feel free utilize it for any agency by forking the code on [Github](https://github.com/nexDevelopment/NextBus-Sort)
+But in the mean time, feel free utilize it for any agency supported by NextBus! 
+
+Find the code on [Github](https://github.com/nexDevelopment/NextBus-Sort)
+
+See the API documentation [here](www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf) [pdf]

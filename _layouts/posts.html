@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1"></meta>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		
-		<title>nexDev Blog</title>
+		<title>{{ page.title }} | nexDev Blog</title>
 
 
 		<link rel="stylesheet" href="../../../css/metro-bootstrap.css">
@@ -79,7 +79,7 @@
 			<div class="container">
 				<div class="grid" style="padding-top:20px; padding-bottom:10px; width:850px; margin: 0 auto 0 auto">	
 					<h1 style="font-size:3.5em; margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.title }} </h1>
-					<h4 style="margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.date | date_to_string }} </h4>
+					<h4 style="margin-bottom:30px; color:rgba(0, 0, 0, 0.6)">{{ page.date | date_to_string }}</h4>
 					{{ content }}
 				</div>
 			</div>

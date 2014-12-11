@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Sorting The NextBus API
-description: Taking good data and organizing it to make it better for your app
+description: How I made the transit data provided by NextBus more organized and easier to use by creating the NextBus-Sort parser.
 ---
 Many transit authorities make their data available for users to utilize, but most of the time they themselves don't host the data. This is especially true for real time data where the information is constantly updated.
 

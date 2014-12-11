@@ -23,7 +23,7 @@
 				color:rgba(0, 0, 0, 0.8);
 				font-size:16.5px;
 				line-height: 19pt;
-				letter-spacing:0.03em;
+				letter-spacing:0.01em;
 				margin:0 0 15pt 0;
 			}
 			
@@ -77,7 +77,7 @@
 		<!--Content area for desktop-->
 		<section class="grid no-phone">
 			<div class="container">
-				<div class="grid" style="padding-top:20px; width:850px; margin: 0 auto 0 auto">	
+				<div class="grid" style="padding-top:20px; padding-bottom:10px; width:850px; margin: 0 auto 0 auto">	
 					<h1 style="font-size:3.5em; margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.title }} </h1>
 					<h4 style="margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.date | date_to_string }} </h4>
 					{{ content }}
@@ -88,12 +88,48 @@
 		<!--Content area for mobile-->
 		<section class="grid on-phone no-tablet no-desktop">
 			<div class="container">
-				<div class="grid" style="padding:20px 5px 0 5px;">	
+				<div class="grid" style="padding:20px 5px 10px 5px;">	
 					<h1 style="font-size:3.5em; margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.title }} </h1>
 					<h4 style="margin-bottom:30px; color:rgba(0, 0, 0, 0.6)"> {{ page.date | date_to_string }} </h4>
 					{{ content }}
 				</div>
 			</div>
 		</section>
+		
+		<!--Nav bar for desktop-->
+		<nav class="horizontal-menu compact no-phone no-tablet" style="text-align:center; background-color:white; padding-top:10px">
+			<ul style="margin-bottom:0px">
+				<li>
+					<a href="https://twitter.com/nexdevco">
+						<i class="icon-twitter" style="font-size:40px;color:#1b64ae; opacity:.85; padding-right:15px">
+					</a></i></li>
+				<li>
+					<a href="https://github.com/nexDevelopment/">
+						<i class="icon-github" style="font-size:40px;color:#1b64ae; opacity:.85;">
+					</a></i></li>
+				<li>
+					<a href="mailto:contact@nexdev.co">
+						<i class="icon-mail" style="font-size:40px; color:#1b64ae; opacity:.85; padding-left:15px">
+					</a></i></li>
+			</ul>
+		</nav>
+		
+		<!--Nav bar for mobile-->
+		<nav class="horizontal-menu compact on-phone no-desktop no-tablet" style="text-align:center; background-color:white">
+			<ul style="margin-bottom:0px">
+				<li>
+					<a href="https://twitter.com/nexdevco">
+						<i class="icon-twitter" style="font-size:36px;color:#1b64ae; opacity:.85">
+					</a></i></li>
+				<li>
+					<a href="https://github.com/nexDevelopment/">
+						<i class="icon-github" style="font-size:36px;color:#1b64ae; opacity:.85">
+					</a></i></li>
+				<li>
+					<a href="mailto:contact@nexdev.co">
+						<i class="icon-mail" style="font-size:36px; color:#1b64ae; opacity:.85">
+					</a></i></li>
+			</ul>
+		</nav>
 	</body>
 </html>

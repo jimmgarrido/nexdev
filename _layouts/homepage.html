@@ -143,7 +143,7 @@
 		</section>
 		
 		<!--Header for mobile-->
-		<section id="header-mobile" class="grid on-phone no-desktop no-tablet-portrait">
+		<section id="header-mobile" class="grid on-phone no-desktop no-tablet">
 			<div class="container">
 				<div class="grid" style="padding-top:10px">				
 						<!--<img src="assets/header.png" style="height:35px; margin:0 auto 0 auto; display:block" />-->
@@ -155,7 +155,7 @@
 		</section>
 		
 		<!--Content area for desktops-->
-		<section id="content-area" class="grid no-phone">
+		<section id="content-area" class="grid no-phone no-tablet">
 			<div class="container">
 				<div class="grid" style="padding-top:560px;">
 					<h1>Apps</h1>
@@ -214,8 +214,68 @@
 			</div>
 		</section>
 		
+		<!--Content area for tablets-->
+		<section id="content-area" class="grid on-tablet no-phone no-desktop">
+			<div class="container">
+				<div class="grid" style="padding:560px 0 0 40px">
+					<h1>Apps</h1>
+					<div class="row" style="margin-bottom:45px">
+						<div class="span2">
+							<a href="/nexMuni">
+								<img id="tile" src="assets/nexmuni.png"/></a>
+						</div>
+						<div class="span8" style="margin-left:0">
+							<a href="/nexMuni">
+								<h3>nexMuni</h3></a>
+							<p>
+								nexMuni is the easiest way to see SF Muni real time departures and nearby stops on Windows Phone.
+								It finds the stops nearest you and shows both outbound and inbound times for 
+								all routes at a stop.</p>
+							<p><em>For Windows Phone 8.1</em></p>
+							<a href="http://www.windowsphone.com/en-us/store/app/nexmuni/7c99cdf3-4d55-4294-956a-ab4e8d6355c9">
+								<img src="assets/badge.png" style="height:60px" />
+							</a>
+						</div>
+					</div>
+					<div class="row" style="margin-bottom:90px">
+						<div class="span2">
+							<img id="tile" src="assets/nexbart.png"/>
+						</div>
+						<div class="span8" style="margin-left:0">
+							<h3>nexBart</h3>
+							<h3 style="font-size:18px;"></h3>
+							<p>
+								Use nexBart to see upcoming departure times for each line and plan a route to your destination.</p>
+							<p><em>In development for Windows Phone 8.1</em></p>
+						</div>
+					</div>
+					<h1>Blog</h1>
+					
+					{{ content }}
+					
+					<h1>Who</h1>
+					<div class="row" style="margin-bottom:100px">
+						<div class="span2">
+							<img id="tile" src="assets/me.jpg"/>
+						</div>
+						<div class="span8" style="margin-left:0">
+							<h3>Jimmy Garrido</h3>
+							<h3 style="font-size:19px">Developer</h3>
+							<p>
+								Jimmy is currently attending San Francisco State University for a B.S 
+								in Computer Science. His skills include C#, Java, and C++ and he has 
+								developed apps for Windows Phone and Android.</p>
+								<a id="links" href="mailto:jimmy@nexdev.co" style="font-size:17px">Email</a>
+								<a id="links" href="http://jimmygarrido.co" style="font-size:17px">Website</a>
+								<a id="links" href="https://twitter.com/jimmgarrido" style="font-size:17px">Twitter</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
 		<!-- Content area for mobile-->
-		<section class="grid on-phone no-desktop no-tablet-portrait" style="background-color:white; height:1340px">
+		<section class="grid on-phone no-desktop no-tablet" style="background-color:white; height:1340px">
 			<div class="container">
 				<div class="grid" style="padding-top:40px">
 					<h1 class="h1-mobile">Apps</h1>
@@ -310,18 +370,18 @@
 		
 		<!--Nav bar for tablet-->
 		<nav class="horizontal-menu compact on-tablet no-phone no-desktop" style="text-align:center; background-color:white">
-			<ul style="margin:720px 0 0 0">
+			<ul style="margin:50px 0 0 0">
 				<li>
 					<a href="https://twitter.com/nexdevco">
-						<i class="icon-twitter" style="font-size:43px;color:#1b64ae; opacity:.75">
+						<i class="icon-twitter" style="font-size:43px;color:#1b64ae; opacity:.75; padding-right:20px">
 					</a></i></li>
 				<li>
 					<a href="https://github.com/nexDevelopment/">
-						<i class="icon-github" style="font-size:43px;color:#1b64ae; opacity:.85">
+						<i class="icon-github" style="font-size:43px;color:#1b64ae; opacity:.75; padding-right:20px">
 					</a></i></li>
 				<li>
 					<a href="mailto:contact@nexdev.co">
-						<i class="icon-mail" style="font-size:43px; color:#1b64ae; opacity:.75">
+						<i class="icon-mail" style="font-size:43px; color:#1b64ae; opacity:.75; padding-right:20px">
 					</a></i></li>
 			</ul>
 		</nav>

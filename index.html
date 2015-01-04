@@ -5,9 +5,9 @@ layout: homepage
 ---
 {% for post in site.posts limit:3 %}
 <!--Blog layout for bigger toys-->
-<div class="row no-phone" style="margin-bottom:100px">
+<div class="row no-phone no-tablet" style="margin-bottom:100px">
 	<div class="span2">
-		<div id="tile" style="padding-top:18px">
+		<div id="tile" style="padding-top:20px">
 			<h3 class="date">
 				{% assign m = post.date | date: "%B" %} 
 				{% case m %}
@@ -29,6 +29,39 @@ layout: homepage
 		</div>
 	</div>
 	<div class="span9" style="margin-left:0">
+		<a href="{{ post.url }}">
+			<h3>{{ post.title }}</h3></a>
+		{% if post.description %}
+		<p>{{ post.description }}</p>
+		{% endif %}
+	</div>
+</div>
+
+<!--Blog layout for biggish toys-->
+<div class="row on-tablet no-phone no-desktop" style="margin-bottom:100px">
+	<div class="span2">
+		<div id="tile" style="padding-top:20px">
+			<h3 class="date">
+				{% assign m = post.date | date: "%B" %} 
+				{% case m %}
+				  {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
+				  {% when 'September' %}Sept
+				  {% else %}{{ post.date | date: "%b" }}
+				{% endcase %}
+				
+			</h3>
+			<h3 class="date">
+				{% assign d = post.date | date: "%-d" %}
+				{% case d %}
+				  {% when '1' or '21' or '31' %}{{ d }}st
+				  {% when '2' or '22' %}{{ d }}nd
+				  {% when '3' or '23' %}{{ d }}rd
+				  {% else %}{{ d }}th
+				{% endcase %}
+			</h3>
+		</div>
+	</div>
+	<div class="span8" style="margin-left:0">
 		<a href="{{ post.url }}">
 			<h3>{{ post.title }}</h3></a>
 		{% if post.description %}

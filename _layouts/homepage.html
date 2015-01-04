@@ -29,9 +29,9 @@
 			}
 			
 			#title-desktop {
-				font-size:64px !important; 
+				font-size:60px !important; 
 				text-align:center !important;
-				color:rgba(0, 0, 0, 0.6) !important;
+				color:rgba(0, 0, 0, 0.7) !important;
 			}
 			
 			#title-mobile {
@@ -53,8 +53,8 @@
 			}
 			
 			.metro h1 {
-				color:rgba(0, 0, 0, 0.8); 
-				font-size:38px; 
+				color:rgba(0, 0, 0, 1); 
+				font-size:34px; 
 				text-align:left; 
 				padding-bottom:5px;
 			}
@@ -72,24 +72,43 @@
 				color:rgba(0, 0, 0, 0.8);
 			}
 			
+			.metro h3 {
+				margin: 0 0 8px 0;
+				font-weight: 700;
+				font-size: 22px;
+			}
+			
 			.h3-mobile {
 				margin-top`:5px !important; 
 				font-size:22.33px !important; 
 				text-align:center !important;
 			}
 			
-			.metro h3 {
-				margin: 0 0 8px 0;
-				font-weight: 700;
+			.metro p {
+				font-family: "Segoe UI Light", "Open Sans Light", Verdana, Arial, Helvetica, sans-serif;
+				font-weight: 300;
+				font-size: 17px;
+				line-height: 18pt;
+				letter-spacing: .2px;
 			}
 			
+			#links {
+				font-family: "Segoe UI Light", "Open Sans Light", Verdana, Arial, Helvetica, sans-serif;
+				font-weight: 300;
+				font-size: 17px;
+				line-height: 18pt;
+				letter-spacing: .2px;
+				padding-right: 25px;
+				
+			}
+				
 			.date {
 				color: white !important;
 				text-align: center !important;
-				padding:5px 0 0 0 !important;
+				padding:0 0 0 0 !important;
 				font-weight: 500 !important;
-				margin:5px 0 0 0 !important;
-				font-size: 28px !important;
+				margin:0 0 5px 0 !important;
+				font-size: 25px !important;
 			}
 			
 			.date-mobile {
@@ -99,6 +118,12 @@
 				font-weight: 500 !important;
 				margin:4px 0 0 0 !important;
 				font-size: 24px !important;
+			}
+			
+			#tile {
+				height: 95px;
+				width: 95px;
+				background-color:#1b64ae; 
 			}
 			
 		</style>
@@ -112,7 +137,7 @@
 						<!--<img src="assets/header.png" style="height:69px; margin:5px auto 0 auto; display:block" />-->
 						<h1 id="title-desktop">nexDevelopment</h1>
 						<h2>Building great apps for the Windows platform</h2>
-						<img src="assets/hero.png" style="height:415px; margin:0 auto 0 auto; display:block" />
+						<img src="assets/hero.png" style="height:400px; margin:0 auto 0 auto; display:block" />
 				</div>
 			</div>
 		</section>
@@ -137,9 +162,9 @@
 					<div class="row" style="margin-bottom:45px">
 						<div class="span2">
 							<a href="/nexMuni">
-								<img src="assets/nexmuni.png" style="height:110px"/></a>
+								<img id="tile" src="assets/nexmuni.png"/></a>
 						</div>
-						<div class="span9">
+						<div class="span9" style="margin-left:0">
 							<a href="/nexMuni">
 								<h3>nexMuni</h3></a>
 							<p>
@@ -152,11 +177,11 @@
 							</a>
 						</div>
 					</div>
-					<div class="row" style="margin-bottom:100px">
+					<div class="row" style="margin-bottom:90px">
 						<div class="span2">
-							<img src="assets/nexbart.png" style="height:110px"/>
+							<img id="tile" src="assets/nexbart.png"/>
 						</div>
-						<div class="span9">
+						<div class="span9" style="margin-left:0">
 							<h3>nexBart</h3>
 							<h3 style="font-size:18px;"></h3>
 							<p>
@@ -171,17 +196,18 @@
 					<h1>Who</h1>
 					<div class="row" style="margin-bottom:100px">
 						<div class="span2">
-							<img src="assets/me.jpg" style="height:110px"/>
+							<img id="tile" src="assets/me.jpg"/>
 						</div>
-						<div class="span9">
+						<div class="span9" style="margin-left:0">
 							<h3>Jimmy Garrido</h3>
-							<h3 style="font-size:1.25em;">Developer</h3>
+							<h3 style="font-size:19px">Developer</h3>
 							<p>
-								Born and raised in California, Jimmy is currently attending San Francisco 
-								State University for a B.S in Computer Science. His skills include C#,
-								Java, and C++ and he has developed apps for Windows Phone and Android.</p>
-								<a href="mailto:jimmy@nexdev.co" style="font-size:15px">jimmy@nexdev.co</a><br/>
-								<a href="http://jimmygarrido.co" style="font-size:15px">jimmygarrido.co</a>
+								Jimmy is currently attending San Francisco State University for a B.S 
+								in Computer Science. His skills include C#, Java, and C++ and he has 
+								developed apps for Windows Phone and Android.</p>
+								<a id="links" href="mailto:jimmy@nexdev.co" style="font-size:17px">Email</a>
+								<a id="links" href="http://jimmygarrido.co" style="font-size:17px">Website</a>
+								<a id="links" href="https://twitter.com/jimmgarrido" style="font-size:17px">Twitter</a>
 						</div>
 					</div>
 				</div>

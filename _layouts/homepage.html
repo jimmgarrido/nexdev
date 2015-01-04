@@ -61,8 +61,8 @@
 			
 			.h1-mobile {
 				color:black !important; 
-				font-size:3.0em !important; 
-				text-align:left !important; 
+				font-size: 29px !important; 
+				text-align:center !important; 
 				padding-bottom:10px !important;
 			}
 			
@@ -73,15 +73,16 @@
 			}
 			
 			.metro h3 {
-				margin: 0 0 8px 0;
-				font-weight: 700;
-				font-size: 22px;
+				font-size:22px;
+				line-height:26px;
+				margin-top: 0px;
 			}
 			
-			.h3-mobile {
-				margin-top`:5px !important; 
-				font-size:22.33px !important; 
-				text-align:center !important;
+			.h3-mobile { 
+				font-size:19px; 
+				text-align:center;
+				line-height: 4.2rem; 
+				margin-bottom: 3px !important;
 			}
 			
 			.metro p {
@@ -92,6 +93,11 @@
 				letter-spacing: .2px;
 			}
 			
+			#mobile-p {
+				text-align: center;
+				font-size: 14px;
+			}
+			
 			#links {
 				font-family: "Segoe UI Light", "Open Sans Light", Verdana, Arial, Helvetica, sans-serif;
 				font-weight: 300;
@@ -100,6 +106,15 @@
 				letter-spacing: .2px;
 				padding-right: 25px;
 				
+			}
+			
+			#mobile-links {
+				font-family: "Segoe UI Light", "Open Sans Light", Verdana, Arial, Helvetica, sans-serif;
+				font-weight: 300;
+				font-size: 15px;
+				line-height: 30pt;
+				letter-spacing: .2px;
+				padding: 0 10px 0 10px;
 			}
 				
 			.date {
@@ -114,10 +129,19 @@
 			.date-mobile {
 				color: white !important;
 				text-align: center !important;
-				padding:5px 0 0 0 !important;
+				padding:0 0 0 0 !important;
 				font-weight: 500 !important;
-				margin:4px 0 0 0 !important;
-				font-size: 24px !important;
+				margin:0 0 -4px 0 !important;
+				font-size: 18px !important;
+			}
+			
+			#mobile-date-block {
+				width:80px; 
+				height:80px; 
+				padding-top:15px; 
+				margin:0 auto 0 auto; 
+				display:block;
+				background-color:#1b64ae;
 			}
 			
 			#tile {
@@ -125,7 +149,6 @@
 				width: 95px;
 				background-color:#1b64ae; 
 			}
-			
 		</style>
 	</head>
 	
@@ -134,7 +157,6 @@
 		<section id="header-desktop" class="grid no-phone">
 			<div class="container">
 				<div class="grid" style="padding-top:50px">				
-						<!--<img src="assets/header.png" style="height:69px; margin:5px auto 0 auto; display:block" />-->
 						<h1 id="title-desktop">nexDevelopment</h1>
 						<h2>Building great apps for the Windows platform</h2>
 						<img src="assets/hero.png" style="height:400px; margin:0 auto 0 auto; display:block" />
@@ -146,10 +168,9 @@
 		<section id="header-mobile" class="grid on-phone no-desktop no-tablet">
 			<div class="container">
 				<div class="grid" style="padding-top:10px">				
-						<!--<img src="assets/header.png" style="height:35px; margin:0 auto 0 auto; display:block" />-->
 						<h1 id="title-mobile">nexDevelopment</h1>
 						<h2 id="tag-mobile">Building great apps for the Windows platform</h2>
-						<img src="assets/hero.png" style="height:115px; margin:20px auto 0 auto; display:block" />
+						<img src="assets/hero.png" style="height:120px; margin:20px auto 0 auto; display:block" />
 				</div>
 			</div>
 		</section>
@@ -200,7 +221,7 @@
 						</div>
 						<div class="span9" style="margin-left:0">
 							<h3>Jimmy Garrido</h3>
-							<h3 style="font-size:19px">Developer</h3>
+							<h3 style="font-size:19px; margin:-5px 0 5px 0">Developer</h3>
 							<p>
 								Jimmy is currently attending San Francisco State University for a B.S 
 								in Computer Science. His skills include C#, Java, and C++ and he has 
@@ -261,10 +282,9 @@
 						<div class="span8" style="margin-left:0">
 							<h3>Jimmy Garrido</h3>
 							<h3 style="font-size:19px">Developer</h3>
-							<p>
-								Jimmy is currently attending San Francisco State University for a B.S 
-								in Computer Science. His skills include C#, Java, and C++ and he has 
-								developed apps for Windows Phone and Android.</p>
+							<p>Jimmy is currently attending San Francisco State University for a B.S 
+							in Computer Science. His skills include C#, Java, and C++ and he has 
+							developed apps for Windows Phone and Android.</p>
 								<a id="links" href="mailto:jimmy@nexdev.co" style="font-size:17px">Email</a>
 								<a id="links" href="http://jimmygarrido.co" style="font-size:17px">Website</a>
 								<a id="links" href="https://twitter.com/jimmgarrido" style="font-size:17px">Twitter</a>
@@ -277,7 +297,7 @@
 		<!-- Content area for mobile-->
 		<section class="grid on-phone no-desktop no-tablet" style="background-color:white; height:1340px">
 			<div class="container">
-				<div class="grid" style="padding-top:40px">
+				<div class="grid" style="padding-top:45px">
 					<h1 class="h1-mobile">Apps</h1>
 					<div class="row" style="margin-bottom:35px">
 						<div class="span2">
@@ -287,11 +307,11 @@
 						<div class="span9">
 						<a href="/nexMuni">
 						<h3 class="h3-mobile">nexMuni</h3></a>
-						<p style="font-size:13.4px">
+						<p id="mobile-p">
 							nexMuni is the easiest way to see SF Muni real time departures and nearby stops on Windows Phone.
 							It finds the stops nearest you and shows both outbound and inbound times for 
-							all routes at a stop.<a href="/nexMuni" style="font-size:1em;"> Learn More</a></p>
-						<p style="font-size:13.4px"><em>For Windows Phone 8.1</em></p>
+							all routes at a stop.<a href="/nexMuni" style="font-size:1em;"> Learn More</a><br>
+						<em>For Windows Phone 8.1</em></p>
 						<a href="http://www.windowsphone.com/en-us/store/app/nexmuni/7c99cdf3-4d55-4294-956a-ab4e8d6355c9">
 						<img src="assets/badge.png" style="height:45px; margin:0 auto 0 auto; display:block" />
 						</a>
@@ -303,9 +323,9 @@
 						</div>
 						<div class="span9">
 						<h3 class="h3-mobile">nexBart</h3>
-						<p style="font-size:13.4px">
-							Use nexBart to see upcoming departure times for each line and plan a route to your destination.</p>
-						<p style="font-size:13.4px"><em>In development for Windows Phone 8.1</em></p>
+						<p id="mobile-p">
+							Use nexBart to see upcoming departure times for each line and plan a route to your destination.<br>
+						<em>In development for Windows Phone 8.1</em></p>
 						</div>
 					</div>
 					<h1 class="h1-mobile">Blog</h1>
@@ -320,12 +340,13 @@
 						<div class="span9">
 							<h3 class="h3-mobile">Jimmy Garrido</h3>
 							<h3 style="font-size:17px; text-align:center">Developer</h3>
-							<p style="font-size:13.4px">
+							<p id="mobile-p">
 								Born and raised in California, Jimmy is currently attending San Francisco 
 								State University for a B.S in Computer Science. His skills include C#,
-								Java, and C++ and he has developed apps for Windows Phone and Android.</p>
-								<a href="mailto:jimmy@nexdev.co" style="font-size:15.5px; display:block; text-align:center; margin-bottom:10px" >jimmy@nexdev.co</a>
-								<a href="http://jimmygarrido.co" style="font-size:15.5px; display:block; text-align:center">jimmygarrido.co</a>
+								Java, and C++ and he has developed apps for Windows Phone and Android.<br>
+								<a id="mobile-links" href="mailto:jimmy@nexdev.co">Email</a>
+								<a id="mobile-links" href="http://jimmygarrido.co">Website</a>
+								<a id="mobile-links" href="https://twitter.com/jimmgarrido">Twitter</a></p>
 						</div>
 					</div>
 				</div>
